@@ -6,49 +6,36 @@
 <title>Nguyễn Bảo Vân - Portfolio Công nghệ số</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2 family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playball&display=swap" rel="stylesheet">
+<!-- Nhúng thêm font Playball chỉ dùng riêng cho tên Logo -->
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playball&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-  /* ====== CÁC THAY ĐỔI STYLE THEO Ý BẠN ====== */
+  /* ====== CÁC THAY ĐỔI THEO YÊU CẦU ====== */
 
-  /* 1. Màu nền Web loang hồng tím pastel nhạt nhưng đậm đà hơn bài cũ */
+  /* 1. Màu nền Web loang hồng tím pastel đậm hơn một chút */
   body {
-    background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 50%, #e8eaf6 100%);
-    background-attachment: fixed;
-    color: #2c3e50; /* Màu chữ tối để dễ đọc trên nền sáng */
+    background: linear-gradient(135deg, #fce4ec 0%, #f3e5f5 50%, #e8eaf6 100%) !important;
+    background-attachment: fixed !important;
   }
 
-  /* Hoàn trả màu sắc nguyên bản hoặc phù hợp cho các ô thành phần như bài cũ */
-  .info-chip, .goal-card, .work-item, .reflect-card {
-    background: rgba(255, 255, 255, 0.85); /* Trắng trong suốt nhẹ tinh tế */
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px); /* Hiệu ứng kính mờ sang trọng */
-    color: #2c3e50;
-  }
-
-  .site-nav {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-  }
-
-  /* 2. Font chữ logo điệu hơn (Calligraphy - Playball) */
+  /* 2. Chỉ đổi font chữ logo "Bảo Vân" và Seal sang font điệu */
   .brand .brand-name {
-    font-family: 'Playball', cursive; 
-    font-size: 2.3rem;
-    color: #ff6b9d; /* Giữ tông màu hồng đậm xinh xắn */
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    font-family: 'Playball', cursive !important; 
+    font-size: 2.4rem !important;
+    font-weight: normal !important;
+    color: #ff6b9d !important;
   }
   .seal {
-    font-family: 'Playball', cursive;
+    font-family: 'Playball', cursive !important;
+    font-size: 1.4rem !important;
+    font-weight: normal !important;
   }
 
-  /* 3. Khung ảnh đại diện đổi thành KHUNG VUÔNG bo góc nhẹ */
+  /* 3. Avt đổi thành khung vuông bo góc nhẹ */
   .hero-frame {
     border-radius: 20px !important; 
     overflow: hidden !important;
-    border: 6px solid #fff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    aspect-ratio: 1 / 1; 
+    aspect-ratio: 1 / 1 !important; 
   }
   .hero-frame .frame-ring {
     border-radius: 20px !important; 
@@ -107,7 +94,7 @@
       <div class="frame-ring"></div>
       <!-- THAY ĐƯỜNG DẪN ẢNH CỦA BẠN VÀO src="..." Ở DÒNG DƯỚI -->
       <img class="frame-img" src="baovan.jpg" alt="Ảnh đại diện Bảo Vân" style="width: 100%; height: 100%; object-fit: cover;"
-           onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div style=\'width:100%;height:100%;background:linear-gradient(135deg, #fcf0f3, #f3e5f5);display:flex;align-items:center;justify-content:center;font-family:Playball,cursive;font-size:3rem;color:#ff6b9d;border:6px solid #fff;\'>BV</div>');">
+           onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div style=\'width:100%;height:100%;background:linear-gradient(135deg,var(--pink-soft),var(--lilac-soft));display:flex;align-items:center;justify-content:center;font-family:Playball,cursive;font-size:3rem;color:var(--pink-deep);border:6px solid #fff;box-shadow:var(--shadow-soft);\'>BV</div>');">
       <div class="frame-sticker">🌸</div>
     </div>
   </div>
@@ -238,10 +225,10 @@
   });
   window.addEventListener('mouseleave', () => { glow.style.opacity = 0; });
 
-  // ===== Đổi tên các bài tập chuẩn xác thành như ảnh trên =====
+  // ===== Bài tập đã đổi tên thành như ảnh trên =====
   const exercises = [
     {
-      icon: "🗂️", title: "Quản lý tệp & thư mục", 
+      icon: "🗂️", title: "Quản lý tệp & thư mục",
       goal: "Nắm vững các thao tác quản lý tệp tin, thư mục và làm chủ kỹ năng tổ chức dữ liệu một cách khoa học.",
       process: "Luyện tập tạo, tổ chức, sao chép, di chuyển tệp tin bằng thao tác thủ công lẫn phím tắt; tìm hiểu cách khôi phục dữ liệu an toàn từ Thùng rác.",
       link: "https://docs.google.com/document/d/1EVRMv-W7iN4fZKOm4j-LgymJNQKDzv_D/edit?usp=sharing&ouid=108736802703435076245&rtpof=true&sd=true",
@@ -253,7 +240,7 @@
       ]
     },
     {
-      icon: "🔎", title: "Đánh giá học thuật", 
+      icon: "🔎", title: "Đánh giá học thuật",
       goal: "Rèn kỹ năng tìm kiếm, phân loại và đánh giá độ tin cậy của nguồn tài liệu học thuật.",
       process: "So sánh độ tin cậy giữa nhiều nguồn khác nhau, ưu tiên tài liệu có bình duyệt và trình bày danh mục tham khảo theo chuẩn Harvard.",
       link: "https://docs.google.com/document/d/14_M0iF2KLW9YO6FDie8P7kqq13vdyoo0/edit?usp=sharing&ouid=108736802703435076245&rtpof=true&sd=true",
@@ -265,7 +252,7 @@
       ]
     },
     {
-      icon: "🤖", title: "Viết Prompt hiệu quả", 
+      icon: "🤖", title: "Viết Prompt hiệu quả",
       goal: "Làm chủ tư duy thiết kế prompt có cấu trúc để khai thác hiệu quả các mô hình ngôn ngữ lớn.",
       process: "Thử nghiệm mô hình C-T-C-F, áp dụng Role Prompting, Few-shot và Chain-of-Thought để tối ưu chất lượng đầu ra của AI.",
       link: "https://docs.google.com/document/d/18aLL4T22OgAatUWgzvcishCVRXtvzb8q/edit?usp=drive_link&ouid=108736802703435076245&rtpof=true&sd=true",
@@ -278,7 +265,7 @@
       ]
     },
     {
-      icon: "🤝", title: "Hợp tác trực tuyến", 
+      icon: "🤝", title: "Hợp tác trực tuyến",
       goal: "Sử dụng thành thạo các nền tảng cộng tác trực tuyến để phối hợp làm việc nhóm hiệu quả hơn.",
       process: "Kết hợp Trello để quản lý tiến độ và Zalo để giao tiếp nhanh, chia nhỏ nhiệm vụ với deadline rõ ràng cho từng thành viên.",
       link: "https://docs.google.com/document/d/1o_DaM_yKOUBlZtvdlCVn1roRAL9RnwBp/edit?usp=drive_link&ouid=108736802703435076245&rtpof=true&sd=true",
@@ -291,7 +278,7 @@
       ]
     },
     {
-      icon: "🎨", title: "Sáng tạo nội dung với AI", 
+      icon: "🎨", title: "Sáng tạo nội dung với AI",
       goal: "Ứng dụng AI tạo sinh để làm phong phú hơn các sản phẩm trình bày, vẫn giữ dấu ấn cá nhân.",
       process: "Kết hợp ChatGPT, DALL·E và Canva AI để lên ý tưởng, dựng hình ảnh và tinh chỉnh sản phẩm theo tỷ lệ 40% AI - 60% cá nhân.",
       link: "https://docs.google.com/document/d/1a8IXDBjm_wpE0Mifn3H7H1O7XJmXBGkH/edit?usp=drive_link&ouid=108736802703435076245&rtpof=true&sd=true",
@@ -305,7 +292,7 @@
       ]
     },
     {
-      icon: "⚖️", title: "Sử dụng AI có trách nhiệm", 
+      icon: "⚖️", title: "Sử dụng AI có trách nhiệm",
       goal: "Nắm rõ nguyên tắc liêm chính học thuật khi dùng AI hỗ trợ học tập và nghiên cứu.",
       process: "Tìm hiểu quy định sử dụng AI của nhà trường, tự đối chiếu bản dịch/nội dung AI với nguồn gốc và trích dẫn minh bạch.",
       link: "https://docs.google.com/document/d/1QvS_OIYieLKab_XlMiSPu5QIqTEza8dS/edit?usp=drive_link&ouid=108736802703435076245&rtpof=true&sd=true",
@@ -415,4 +402,4 @@
   });
 </script>
 </body>
-</html>v
+</html>
