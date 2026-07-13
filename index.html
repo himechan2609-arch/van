@@ -1,1 +1,382 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Bảo Vân - Portfolio Công nghệ số</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+<div class="petals" id="petals" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <div class="brand">
+      <div class="seal">BV</div>
+      <div class="brand-text">
+        <span class="brand-name">Bảo Vân</span>
+        <span class="brand-id">MSV: 25041215</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#trang-chu" class="nav-link active">Trang chủ</a></li>
+      <li><a href="#gioi-thieu" class="nav-link">Giới thiệu</a></li>
+      <li><a href="#muc-tieu" class="nav-link">Mục tiêu</a></li>
+      <li><a href="#bai-tap" class="nav-link">Bài tập</a></li>
+      <li><a href="#tong-ket" class="nav-link">Tổng kết</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="trang-chu">
+  <div class="wrap hero">
+    <div class="reveal">
+      <span class="hero-eyebrow">🌸 Portfolio học phần Công nghệ số</span>
+      <h1>Nguyễn Bảo Vân</h1>
+      <p class="sub">Đây là trang web xinh xắn tổng hợp 6 bài tập mình thực hiện trong học kỳ, xoay
+        quanh việc tổ chức dữ liệu, đánh giá thông tin và sử dụng AI có trách nhiệm. Mỗi một mục
+        là một lát cắt thật của quá trình học — không tô vẽ, chỉ ghi lại những gì đã làm.</p>
+      <div class="info-chips">
+        <span class="info-chip"><b>🎓 MSV</b>25041215</span>
+        <span class="info-chip"><b>📖 Ngành</b>Ngôn ngữ Anh</span>
+        <span class="info-chip"><b>💻 Học phần</b>Nhập môn Công nghệ số và Trí tuệ nhân tạo AI</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#bai-tap" class="btn btn-primary">🌸 Khám phá 6 bài tập</a>
+        <a href="#gioi-thieu" class="btn btn-ghost">🎐 Về bản thân mình</a>
+      </div>
+    </div>
+    <div class="hero-frame reveal">
+      <div class="frame-ring"></div>
+      <!-- THAY ĐƯỜNG DẪN ẢNH CỦA BẠN VÀO src="..." Ở DÒNG DƯỚI -->
+      <img class="frame-img" src="baovan.jpg" alt="Ảnh đại diện Bảo Vân" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"
+           onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div style=\'width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,var(--pink-soft),var(--lilac-soft));display:flex;align-items:center;justify-content:center;font-family:Baloo 2,cursive;font-size:3rem;color:var(--pink-deep);border:6px solid #fff;box-shadow:var(--shadow-soft);\'>BV</div>');">
+      <div class="frame-sticker">🌸</div>
+    </div>
+  </div>
+  <div class="arc-divider" aria-hidden="true"><span class="sun"></span></div>
+</section>
+
+<section id="gioi-thieu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">🌸 01 · Đôi nét về mình</span>
+      <h2>Giới thiệu bản thân</h2>
+    </div>
+    <div class="intro-text reveal">
+      <p>Mình là Nguyễn Bảo Vân, hiện đang là sinh viên ngành Ngôn ngữ Anh tại Trường Đại học
+        Ngoại ngữ - Đại học Quốc gia Hà Nội. Là một sinh viên ngành ngôn ngữ, mình đặc biệt quan
+        tâm đến việc kết hợp các công cụ trí tuệ nhân tạo vào quy trình học tập nhằm nâng cao
+        hiệu quả nghiên cứu, đồng thời luôn giữ vững nguyên tắc trung thực học thuật.</p>
+      <div class="pull-quote">"Không tô vẽ — chỉ ghi lại những gì đã thực sự làm."</div>
+      <p>Hồ sơ này tổng hợp lại 6 dự án mình đã thực hiện trong học kỳ vừa qua, thuộc học phần
+        Nhập môn Công nghệ số và Trí tuệ nhân tạo AI. Với mình, mỗi bài tập không chỉ là một yêu
+        cầu cần hoàn thành, mà còn là dịp để rèn giũa một "bộ lọc tư duy" của riêng mình — biết
+        khi nào nên tin, khi nào nên kiểm chứng, và khi nào công nghệ thực sự đang giúp ích cho
+        việc học của bản thân.</p>
+    </div>
+  </div>
+</section>
+
+<section id="muc-tieu">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">🎯 02 · Định hướng</span>
+      <h2>Mục tiêu học tập &amp; Portfolio</h2>
+      <p>Những điều mình mong muốn đạt được khi hoàn thành học phần này.</p>
+    </div>
+    <div class="goal-grid">
+      <div class="goal-card reveal">
+        <h3><span class="num">1</span> Mục tiêu học tập</h3>
+        <ul>
+          <li>Trang bị kỹ năng số nền tảng để tổ chức và quản lý dữ liệu học tập một cách khoa học.</li>
+          <li>Biết vận dụng AI như một công cụ hỗ trợ nghiên cứu, không phải để thay thế tư duy cá nhân.</li>
+          <li>Rèn luyện khả năng đánh giá độ tin cậy của nguồn thông tin trước khi sử dụng.</li>
+          <li>Xây dựng thói quen sử dụng công nghệ có chủ đích, minh bạch và có trách nhiệm.</li>
+        </ul>
+      </div>
+      <div class="goal-card reveal">
+        <h3><span class="num">2</span> Mục tiêu Portfolio</h3>
+        <ul>
+          <li>Là nơi lưu lại một lát cắt thật của quá trình học tập trong học kỳ vừa qua, không tô vẽ.</li>
+          <li>Là minh chứng cho tinh thần chủ động kết hợp công nghệ vào việc học của một sinh viên ngành Ngôn ngữ Anh.</li>
+          <li>Là nền tảng để mình tiếp tục ứng dụng công nghệ số một cách có trách nhiệm trong những chặng đường học tập tiếp theo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bai-tap">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">📚 03 · Sản phẩm cá nhân</span>
+      <h2>Mục tiêu &amp; bài học rút ra từ mỗi bài</h2>
+      <p>Bấm "Xem chi tiết" ở mỗi bài để xem đầy đủ các bài học được liệt kê rõ ràng.</p>
+    </div>
+    <div class="work-list" id="workList"></div>
+  </div>
+</section>
+
+<section id="tong-ket">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="tag">🎐 04 · Nhìn lại quá trình học tập</span>
+      <h2>Tổng kết / Nhật ký học tập</h2>
+    </div>
+    <div class="reflect-grid">
+      <div class="reflect-card reveal">
+        <h3>🔍 Một học kỳ nhìn qua lăng kính khác</h3>
+        <p>Việc thiết lập một trang web portfolio tổng hợp này là dịp để mình nhìn lại cả một học
+          kỳ theo một cách khác — không phải qua điểm số, mà qua từng thao tác nhỏ: sắp xếp lại
+          thư mục, viết lại prompt cho rõ ràng hơn, hay kiểm chứng xem nguồn tài liệu có đáng tin
+          cậy hay không. Bài học cốt lõi không chỉ dừng ở các nguyên tắc, mà là việc xây dựng một
+          bộ lọc tư duy cho bản thân.</p>
+      </div>
+      <div class="reflect-card reveal">
+        <h3>🤖 Trách nhiệm không phải là lý thuyết suông</h3>
+        <p>Mình cũng nhận ra việc sử dụng AI có trách nhiệm không phải là một nguyên tắc trừu
+          tượng, mà là những lựa chọn cụ thể trong lúc làm — dùng AI để phác thảo, lên ý tưởng,
+          nhưng luôn tự kiểm chứng trước khi đưa vào sản phẩm cuối cùng.</p>
+      </div>
+      <div class="reflect-card reveal">
+        <h3>🎯 Thành quả lớn nhất: sự tự tin và chính trực</h3>
+        <p>Thành quả quan trọng nhất sau dự án này chính là sự tự tin trong việc định hình được
+          ranh giới giữa hỗ trợ hợp lý và gian lận, giúp mình vừa tận dụng được sức mạnh công
+          nghệ, vừa giữ vững sự chính trực trong học tập.</p>
+      </div>
+    </div>
+
+    <div class="stat-row reveal">
+      <div class="stat"><div class="num">06/06</div><div class="label">🎉 Bài tập hoàn thành</div></div>
+      <div class="stat"><div class="num">100%</div><div class="label">🤝 Trung thực học thuật</div></div>
+      <div class="stat"><div class="num">A+</div><div class="label">🌟 Mục tiêu học phần</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="seal-mini">BV</span> — Portfolio Công nghệ số của Nguyễn Bảo Vân 🌸
+</footer>
+
+<script>
+  // Cánh hoa rơi
+  const petalEmojis = ['🌸','✨','🍃','🎐'];
+  const petalLayer = document.getElementById('petals');
+  for(let i = 0; i < 16; i++){
+    const el = document.createElement('div');
+    el.className = 'petal';
+    el.textContent = petalEmojis[i % petalEmojis.length];
+    el.style.left = (Math.random() * 100) + 'vw';
+    el.style.animationDuration = (9 + Math.random() * 8) + 's';
+    el.style.animationDelay = (Math.random() * 10) + 's';
+    el.style.fontSize = (1 + Math.random() * 0.9) + 'rem';
+    petalLayer.appendChild(el);
+  }
+
+  // Con trỏ phát sáng
+  const glow = document.getElementById('cursorGlow');
+  window.addEventListener('mousemove', (e) => {
+    glow.style.left = e.clientX + 'px'; glow.style.top = e.clientY + 'px'; glow.style.opacity = 1;
+  });
+  window.addEventListener('mouseleave', () => { glow.style.opacity = 0; });
+
+  // ===== Bài tập: dữ liệu + accordion chi tiết =====
+  const exercises = [
+    {
+      icon: "🗂️", title: "Máy tính và các thiết bị ngoại vi",
+      goal: "Nắm vững các thao tác quản lý tệp tin, thư mục và làm chủ kỹ năng tổ chức dữ liệu một cách khoa học.",
+      process: "Luyện tập tạo, tổ chức, sao chép, di chuyển tệp tin bằng thao tác thủ công lẫn phím tắt; tìm hiểu cách khôi phục dữ liệu an toàn từ Thùng rác.",
+      link: "#",
+      points: [
+        { b: "Làm chủ kỹ năng quản lý dữ liệu", t: "Nắm vững các thao tác cơ bản nhưng cực kỳ quan trọng trong môi trường số, bao gồm tạo, tổ chức (thư mục con), sao chép, di chuyển và quản lý tệp tin một cách khoa học." },
+        { b: "Tăng hiệu suất nhờ phím tắt", t: "Sử dụng thành thạo các tổ hợp phím như Windows + E, Ctrl + C, Ctrl + V, Ctrl + X giúp tối ưu hóa thời gian và thao tác, thay thế cho việc dùng chuột thủ công." },
+        { b: "Tư duy về an toàn dữ liệu", t: "Hiểu rõ sự khác biệt giữa việc xóa thông thường và xóa vĩnh viễn (Shift + Delete), cũng như quy trình khôi phục dữ liệu từ Thùng rác, giúp kiểm soát và bảo vệ thông tin cá nhân hiệu quả hơn." },
+        { b: "Tóm lại", t: "Bài thực hành này không chỉ là những thao tác kỹ thuật đơn thuần, mà là bước đệm quan trọng giúp mình xây dựng thói quen tổ chức dữ liệu ngăn nắp và chuyên nghiệp — nền tảng thiết yếu để làm việc với các hệ thống tài liệu phức tạp hơn sau này.", summary: true },
+      ]
+    },
+    {
+      icon: "🔎", title: "Khai thác dữ liệu và thông tin",
+      goal: "Rèn kỹ năng tìm kiếm, phân loại và đánh giá độ tin cậy của nguồn tài liệu học thuật.",
+      process: "So sánh độ tin cậy giữa nhiều nguồn khác nhau, ưu tiên tài liệu có bình duyệt và trình bày danh mục tham khảo theo chuẩn Harvard.",
+      link: "#",
+      points: [
+        { b: "Tư duy đánh giá nguồn tin", t: "Rèn luyện khả năng phân loại và đánh giá độ tin cậy của tài liệu (bài báo khoa học, sách chuyên khảo, nguồn mở) dựa trên các tiêu chí chuyên gia, chỉ số trích dẫn, tính bình duyệt và đơn vị xuất bản." },
+        { b: "Kỹ năng định dạng chuẩn học thuật", t: "Nắm vững cách trình bày danh mục tài liệu tham khảo theo chuẩn Harvard — một kỹ năng thiết yếu trong nghiên cứu khoa học để đảm bảo tính chuyên nghiệp và minh bạch." },
+        { b: "Tư duy phản biện trong nghiên cứu", t: "Hiểu rằng mỗi loại nguồn (ví dụ: Edutopia so với VNU Journal) có vai trò khác nhau; biết cách kết hợp nguồn có tính chuyên sâu (bình duyệt) với nguồn có tính cập nhật (nhiều trải nghiệm thực tế) để có cái nhìn toàn diện." },
+        { b: "Sự nhạy bén với bối cảnh", t: "Biết ưu tiên các nguồn tài liệu phản ánh chính xác bối cảnh giáo dục địa phương (như VNU Journal) để tăng tính ứng dụng cho bài nghiên cứu." },
+      ]
+    },
+    {
+      icon: "🤖", title: "Tổng quan về trí tuệ nhân tạo",
+      goal: "Làm chủ tư duy thiết kế prompt có cấu trúc để khai thác hiệu quả các mô hình ngôn ngữ lớn.",
+      process: "Thử nghiệm mô hình C-T-C-F, áp dụng Role Prompting, Few-shot và Chain-of-Thought để tối ưu chất lượng đầu ra của AI.",
+      link: "#",
+      points: [
+        { b: "Làm chủ tư duy Prompt", t: "Học được cách không chỉ đặt câu hỏi, mà là thiết kế các câu lệnh (prompt) có cấu trúc chặt chẽ dựa trên mô hình C-T-C-F (Context, Task, Constraints, Format), giúp biến AI từ một công cụ hỗ trợ chung chung thành một chuyên gia chuyên biệt." },
+        { b: "Kỹ thuật nâng cao hiệu quả", t: "Nắm vững sức mạnh của việc gán vai trò (Role Prompting), cung cấp ví dụ mẫu (Few-shot) và yêu cầu tư duy từng bước (Chain-of-Thought) để tối ưu hóa chất lượng đầu ra, giảm thiểu hiện tượng AI 'ảo giác' hoặc trả lời hời hợt." },
+        { b: "Tư duy tối ưu hóa quy trình", t: "Hiểu rằng thời gian đầu tư để viết một prompt chất lượng là một khoản đầu tư xứng đáng, giúp tiết kiệm đáng kể thời gian chỉnh sửa, biên tập sau đó." },
+        { b: "Kỹ năng cá nhân hóa kết quả", t: "Biết cách định hướng AI tạo ra sản phẩm phù hợp với nhu cầu học thuật cụ thể (như thang đo Bloom cho ôn tập hay tóm tắt tài liệu ngôn ngữ học), giúp nâng cao tính ứng dụng thực tế của kết quả." },
+        { b: "Tóm lại", t: "Dự án này không chỉ đơn thuần là việc học cách 'ra lệnh' cho AI, mà là quá trình mình rèn luyện khả năng tư duy logic và diễn đạt ngôn ngữ một cách chính xác, minh bạch — những năng lực cốt lõi giúp làm chủ công nghệ và nâng cao hiệu suất học tập lên một tầm cao mới.", summary: true },
+      ]
+    },
+    {
+      icon: "🤝", title: "Giao tiếp và hợp tác trong môi trường số",
+      goal: "Sử dụng thành thạo các nền tảng cộng tác trực tuyến để phối hợp làm việc nhóm hiệu quả hơn.",
+      process: "Kết hợp Trello để quản lý tiến độ và Zalo để giao tiếp nhanh, chia nhỏ nhiệm vụ với deadline rõ ràng cho từng thành viên.",
+      link: "#",
+      points: [
+        { b: "Tư duy làm việc cộng tác số", t: "Hiểu rõ cách kết hợp các công cụ (Trello cho quản lý tiến độ, Zalo cho giao tiếp nhanh) để tạo ra luồng làm việc hiệu quả thay vì sử dụng rời rạc." },
+        { b: "Kỷ luật trong quản lý công việc", t: "Rèn luyện thói quen cập nhật trạng thái công việc ngay lập tức trên hệ thống quản lý tập trung (Trello), thay vì chỉ báo cáo miệng, để đảm bảo tính minh bạch và chính xác cho cả nhóm." },
+        { b: "Kỹ năng giải quyết vấn đề thực tế", t: "Học được cách tối ưu hóa công cụ để khắc phục các thách thức nhóm thường gặp như trôi thông tin (sử dụng tính năng ghim, bình chọn) và sự rời rạc giữa các kênh liên lạc." },
+        { b: "Tự quản lý cá nhân", t: "Biết cách chia nhỏ nhiệm vụ lớn thành các đầu việc cụ thể với deadline rõ ràng để tránh tình trạng 'dồn việc' và duy trì sự chủ động trong quá trình thực hiện dự án." },
+        { b: "Tóm lại", t: "Mình không chỉ nắm vững kiến thức chuyên môn mà còn hình thành được tư duy làm việc nhóm hiện đại — một kỹ năng mềm sống còn trong thời đại số.", summary: true },
+      ]
+    },
+    {
+      icon: "🎨", title: "Sử dụng AI tạo sinh để hỗ trợ sáng tạo nội dung",
+      goal: "Ứng dụng AI tạo sinh để làm phong phú hơn các sản phẩm trình bày, vẫn giữ dấu ấn cá nhân.",
+      process: "Kết hợp ChatGPT, DALL·E và Canva AI để lên ý tưởng, dựng hình ảnh và tinh chỉnh sản phẩm theo tỷ lệ 40% AI - 60% cá nhân.",
+      link: "#",
+      points: [
+        { b: "Tư duy làm chủ công nghệ", t: "Hiểu được AI là 'trợ lý' hỗ trợ (giảm tải việc tìm kiếm, lên ý tưởng, thiết kế) chứ không thay thế hoàn toàn năng lực tư duy và phong cách cá nhân." },
+        { b: "Kỹ năng Prompting (Đặt lệnh)", t: "Rèn luyện được cách mô tả yêu cầu chi tiết, biết cách điều chỉnh và 'tinh chỉnh' (refine) prompt sau khi nhận kết quả chưa đạt yêu cầu để có đầu ra chất lượng hơn." },
+        { b: "Tư duy phản biện và kiểm chứng", t: "Hình thành thói quen không 'sao chép mù quáng', luôn kiểm tra tính chính xác của thông tin và chỉnh sửa nội dung do AI tạo ra để đảm bảo phù hợp với thực tế và ngữ cảnh cụ thể." },
+        { b: "Tích hợp đa công cụ", t: "Biết cách kết hợp thế mạnh của nhiều nền tảng khác nhau (ChatGPT cho nội dung, DALL·E cho hình ảnh, Canva AI cho thiết kế) để tối ưu hóa quy trình sáng tạo." },
+        { b: "Trách nhiệm số", t: "Nhận thức rõ về đạo đức khi sử dụng AI: cần minh bạch trong việc sử dụng, tôn trọng bản quyền và luôn giữ trách nhiệm cuối cùng với sản phẩm của mình." },
+        { b: "Tóm lại", t: "Mình đã có bước tiến lớn từ người sử dụng công cụ thụ động sang người điều phối quy trình sáng tạo, biết cách cân bằng giữa sức mạnh của AI và dấu ấn cá nhân (tỷ lệ 40/60) để tạo ra sản phẩm hoàn chỉnh nhất.", summary: true },
+      ]
+    },
+    {
+      icon: "⚖️", title: "An toàn và liêm chính học thuật trong môi trường số",
+      goal: "Nắm rõ nguyên tắc liêm chính học thuật khi dùng AI hỗ trợ học tập và nghiên cứu.",
+      process: "Tìm hiểu quy định sử dụng AI của nhà trường, tự đối chiếu bản dịch/nội dung AI với nguồn gốc và trích dẫn minh bạch.",
+      link: "#",
+      points: [
+        { b: "Tư duy trung thực học thuật", t: "Nhận thức rõ ranh giới giữa việc sử dụng AI làm 'trợ lý học tập' (hỗ trợ ý tưởng, dàn ý) và gian lận học thuật (sao chép nguyên văn)." },
+        { b: "Kỹ năng kiểm chứng thông tin", t: "Rèn luyện thói quen không tin tưởng tuyệt đối vào AI, luôn đối chiếu và kiểm chứng thông tin từ các nguồn học thuật đáng tin cậy trước khi đưa vào sản phẩm cuối cùng." },
+        { b: "Trách nhiệm minh bạch", t: "Hiểu được tầm quan trọng của việc công khai, minh bạch vai trò của AI trong quá trình làm bài và thực hiện trích dẫn nguồn đầy đủ để tôn trọng bản quyền." },
+        { b: "Phát triển tư duy phản biện", t: "AI chỉ phát huy giá trị tích cực khi người học biết kết hợp công nghệ với khả năng tư duy cá nhân, từ đó hạn chế sự phụ thuộc và nguy cơ suy giảm kỹ năng tự học." },
+        { b: "Tuân thủ quy định", t: "Hiểu và áp dụng đúng các nguyên tắc đạo đức trong chính sách của nhà trường để vừa tận dụng công nghệ, vừa đảm bảo tính chính trực trong môi trường học thuật." },
+        { b: "Tóm lại", t: "Dự án đã giúp mình xây dựng được một 'bộ khung' nguyên tắc cá nhân vững chắc, giúp bản thân chủ động, trách nhiệm và tự tin hơn khi sử dụng AI như một công cụ hỗ trợ đắc lực trong hành trình nghiên cứu.", summary: true },
+      ]
+    },
+  ];
+
+  const workList = document.getElementById('workList');
+  exercises.forEach((ex, i) => {
+    const item = document.createElement('div');
+    item.className = 'work-item reveal';
+    const pointsHtml = ex.points.map(p => `
+      <div class="detail-point${p.summary ? ' summary' : ''}">
+        <span class="dot"></span>
+        <span class="txt"><b>${p.b}:</b> ${p.t}</span>
+      </div>`).join('');
+    item.innerHTML = `
+      <div class="num">${i + 1}</div>
+      <div>
+        <h3>${ex.icon} ${ex.title}</h3>
+        <div class="work-fields">
+          <div class="row"><b>Mục tiêu:</b> ${ex.goal}</div>
+          <div class="row"><b>Quá trình thực hiện:</b> ${ex.process}</div>
+        </div>
+        <div class="work-actions">
+          <a href="${ex.link}" class="work-link">📁 Xem chi tiết bài tập</a>
+          <button type="button" class="detail-toggle">
+            <span class="chevron">▾</span> Xem chi tiết bài học rút ra
+          </button>
+        </div>
+        <div class="detail-panel">
+          <div class="detail-panel-inner">
+            <div class="detail-list">${pointsHtml}</div>
+          </div>
+        </div>
+      </div>`;
+    workList.appendChild(item);
+
+    const toggle = item.querySelector('.detail-toggle');
+    const panel = item.querySelector('.detail-panel');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.classList.contains('open');
+      if(isOpen){
+        toggle.classList.remove('open');
+        panel.style.maxHeight = null;
+        toggle.innerHTML = '<span class="chevron">▾</span> Xem chi tiết bài học rút ra';
+      } else {
+        toggle.classList.add('open');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+        toggle.innerHTML = '<span class="chevron">▾</span> Thu gọn';
+      }
+    });
+  });
+
+  // Ô tổng hợp cuối danh sách
+  const summaryBanner = document.createElement('div');
+  summaryBanner.className = 'work-item reveal summary-banner';
+  summaryBanner.style.gridTemplateColumns = '1fr';
+  summaryBanner.innerHTML = `
+    <div class="inner">
+      <span class="tag">📁 Tổng hợp</span>
+      <h3>Nơi tổng hợp toàn bộ 6 bài làm cá nhân</h3>
+      <p>Để tiện theo dõi và đánh giá, toàn bộ file báo cáo và sản phẩm của cả 6 bài tập cá nhân được lưu trữ đồng bộ trong một thư mục chung.</p>
+      <a href="#" class="btn btn-primary" style="padding: 14px 36px; font-size: 0.95rem;">Truy cập Thư mục Tổng hợp</a>
+    </div>`;
+  workList.appendChild(summaryBanner);
+
+  // Hiệu ứng xuất hiện khi cuộn
+  const reveals = document.querySelectorAll('.reveal');
+  reveals.forEach((el, i) => { el.style.transitionDelay = (i % 4) * 0.08 + 's'; });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => io.observe(el));
+
+  // Số liệu "nảy" khi vào khung nhìn
+  const stats = document.querySelectorAll('.stat');
+  const statIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { entry.target.classList.add('in-view'); statIo.unobserve(entry.target); }
+    });
+  }, { threshold: 0.4 });
+  stats.forEach(el => statIo.observe(el));
+
+  // Cuộn mượt
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  // Đánh dấu mục nav đang xem
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section[id]');
+  const navIo = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+      }
+    });
+  }, { threshold: 0.3 });
+  sections.forEach(s => navIo.observe(s));
+
+  // Trước khi in: hiện đầy đủ nội dung, tắt hiệu ứng động
+  window.addEventListener('beforeprint', () => {
+    reveals.forEach(el => el.classList.add('in-view'));
+    stats.forEach(el => el.classList.add('in-view'));
+    document.querySelectorAll('.detail-panel').forEach(p => p.style.maxHeight = p.scrollHeight + 'px');
+  });
+</script>
+</body>
+</html>
